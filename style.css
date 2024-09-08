@@ -1,0 +1,62 @@
+/* FONTS */
+.ubuntu-mono-regular {
+  font-family: "Ubuntu Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.ubuntu-mono-bold {
+  font-family: "Ubuntu Mono", monospace;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.ubuntu-mono-regular-italic {
+  font-family: "Ubuntu Mono", monospace;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.ubuntu-mono-bold-italic {
+  font-family: "Ubuntu Mono", monospace;
+  font-weight: 700;
+  font-style: italic;
+}
+
+/* HEADER */
+header {
+  background-color: #7e9c75;
+  margin-bottom: 1em;
+}
+
+header h1 {
+  margin: 3em;
+  text-align: center;
+}
+
+.logo {
+  background-color: #2d3138;
+  color: #ffffff;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.logo .special-text {
+  color: #7e9c75;
+}
+
+/* HEADING */
+.heading {
+  border-left: 5px solid #7e9c75;
+  padding-left: 10px;
+}
+
+/* ARTICLE */
+.article {
+  text-align: center;
+  margin: 5px;
+}
+
+.article i {
+  padding: 30px;
+}

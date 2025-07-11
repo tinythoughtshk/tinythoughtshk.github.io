@@ -8,7 +8,6 @@
     <!-- CSS -->
     <link rel="stylesheet" href="assets/fontawesome/css/fontawesome.css" />
     <link rel="stylesheet" href="assets/fontawesome/css/solid.css" />
-    <link rel="stylesheet" href="assets/picocss/css/pico.min.css" />
     <link rel="stylesheet" href="style.css" />
 
     <!-- Font -->
@@ -19,31 +18,254 @@
       rel="stylesheet"
     />
   </head>
-
-  <body class="ubuntu-mono-regular">
-    <header class="container-fluid">
-      <span class="logo">TINY<span class="special-text">.</span>THOUGHTS</span>
-      <h1 class="ubuntu-mono-bold">
-        <span class="logo"
-          >TINY<span class="special-text">.</span>THOUGHTS</span
-        >
-        Studio Limited
-      </h1>
-    </header>
-    <main class="container">
-      <h2 class="ubuntu-mono-bold heading">Services</h2>
-      <div class="grid">
-        <article class="article">
-          <i class="fa-5x fa-solid fa-code"></i>
-          <h3 class="ubuntu-mono-bold">Software Development</h3>
-          <p>Website & Android Application Developemnt</p>
-        </article>
-        <article class="article">
-          <i class="fa-5x fa-solid fa-brush"></i>
-          <h3 class="ubuntu-mono-bold">Illustration</h3>
-          <p>Commissions currently closed!</p>
-        </article>
+  <body>
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="nav-logo">
+          <a href="#home">
+            <span class="logo"
+              >TINY<span class="special-text">.</span>THOUGHTS</span
+            >
+          </a>
+        </div>
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a href="#about" class="nav-link">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="#services" class="nav-link">Services</a>
+          </li>
+          <li class="nav-item">
+            <a href="#portfolio" class="nav-link">Portfolio</a>
+          </li>
+        </ul>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
       </div>
-    </main>
+    </nav>
+
+    <section id="home" class="hero">
+      <div class="hero-content">
+        <div>
+          <h1>
+            Turn Your
+            <span class="logo"
+              >TINY<span class="special-text">.</span>THOUGHTS</span
+            >
+            into Reality
+          </h1>
+          <p>
+            I create modern, scalable web applications and software solutions.
+          </p>
+          <div class="hero-buttons">
+            <a href="#portfolio" class="btn btn-primary">View My Work</a>
+          </div>
+        </div>
+        <div class="hero-image">
+          <div class="code-animation">
+            <pre><code id="typing-code"></code></pre>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="about">
+      <div class="container">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-content">
+          <div class="about-text">
+            <p>
+              I'm a passionate full-stack developer with over 10 years of
+              experience creating digital solutions that drive business growth.
+              My expertise spans modern web technologies, cloud platforms, and
+              mobile development.
+            </p>
+            <p>
+              I believe in writing clean, maintainable code and delivering
+              projects that exceed expectations. Whether you need a complete web
+              application, API development, or technical consulting, I'm here to
+              help bring your ideas to life.
+            </p>
+
+            <div class="skills">
+              <h3>Technical Skills</h3>
+              <div class="skill-tags">
+                <span class="skill-tag">Java</span>
+                <span class="skill-tag">Python</span>
+                <span class="skill-tag">JavaScript</span>
+                <span class="skill-tag">TypeScript</span>
+                <span class="skill-tag">HTML/CSS</span>
+                <span class="skill-tag">React</span>
+                <span class="skill-tag">Node.js</span>
+                <span class="skill-tag">Next.js</span>
+                <span class="skill-tag">Tailwind CSS</span>
+                <span class="skill-tag">PostgreSQL</span>
+                <span class="skill-tag">AWS</span>
+                <span class="skill-tag">Docker</span>
+                <span class="skill-tag">Git</span>
+              </div>
+            </div>
+          </div>
+          <div class="about-stats">
+            <div class="stat">
+              <h3>10+</h3>
+              <p>Years Experience</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="services">
+      <div class="container">
+        <h2 class="section-title">Services</h2>
+        <div class="services-grid">
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fas fa-code"></i>
+            </div>
+            <h3>Web Development</h3>
+            <p>
+              Custom web applications built with modern frameworks like React
+              and Next.js. Responsive, fast, and user-friendly.
+            </p>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fas fa-server"></i>
+            </div>
+            <h3>Backend Development</h3>
+            <p>
+              Robust APIs and server-side solutions using Node.js, Python, and
+              cloud services. Scalable and secure architecture.
+            </p>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fas fa-mobile-alt"></i>
+            </div>
+            <h3>Mobile Apps</h3>
+            <p>
+              Cross-platform mobile applications using React Native and Expo.
+              Native performance with shared codebase.
+            </p>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fas fa-cloud"></i>
+            </div>
+            <h3>Cloud Solutions</h3>
+            <p>
+              Cloud deployment and DevOps using AWS, Google Cloud, and Azure.
+              Automated CI/CD pipelines and infrastructure.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="portfolio" class="portfolio">
+      <div class="container">
+        <h2 class="section-title">Portfolio</h2>
+        <div class="portfolio-grid">
+          <div class="portfolio-item">
+            <div class="portfolio-image">
+              <div class="placeholder-image">
+                <img src="./assets/images/portfolio-tic-tac-toe.png" />
+              </div>
+            </div>
+            <div class="portfolio-content">
+              <h3>Tic Tac Toe Game</h3>
+              <p>
+                A single-page Tic Tac Toe game created with Next.js. Features a
+                clean, minimalistic and responsive design for an engaging user
+                experience.
+              </p>
+              <div class="portfolio-tech">
+                <span>React</span>
+                <span>Node.js</span>
+                <span>Next.js</span>
+              </div>
+              <a
+                href="https://tthk-demo-tictactoe-fe.netlify.app"
+                class="portfolio-link"
+                target="_blank"
+                >View Project</a
+              >
+            </div>
+          </div>
+          <div class="portfolio-item">
+            <div class="portfolio-image">
+              <div class="placeholder-image">
+                <img
+                  src="./assets/images/portfolio-the-belly-worship-snake-game.png"
+                />
+              </div>
+            </div>
+            <div class="portfolio-content">
+              <h3>The Belly Worship Snake Game</h3>
+              <p>
+                A single-page Belly Worship Snake game built with Next.js.
+                Features intuitive gameplay experience and smooth animations for
+                snake movement.
+              </p>
+              <div class="portfolio-tech">
+                <span>React</span>
+                <span>Node.js</span>
+                <span>Next.js</span>
+              </div>
+              <a
+                href="https://tthk-demo-snakegame-fe.netlify.app"
+                class="portfolio-link"
+                target="_blank"
+                >View Project</a
+              >
+            </div>
+          </div>
+          <div class="portfolio-item">
+            <div class="portfolio-image">
+              <div class="placeholder-image">
+                <img src="./assets/images/portfolio-to-do-list-app.png" />
+              </div>
+            </div>
+            <div class="portfolio-content">
+              <h3>To-Do List App</h3>
+              <p>
+                A mobile app built with Expo. Features intuitive user interface
+                with cute cat cartoons, making task management fun and engaging.
+              </p>
+              <div class="portfolio-tech">
+                <span>React Native</span>
+                <span>Node.js</span>
+                <span>Expo</span>
+              </div>
+              <a href="#" class="portfolio-link" id="todo-popup-link"
+                >View Project</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div id="todo-popup-modal" class="popup-modal">
+      <div class="popup-modal-content">
+        <span class="popup-close" id="todo-popup-close">&times;</span>
+        <img
+          src="./assets/images/portfolio-to-do-list-app-details.png"
+          alt="To-Do List App Details"
+        />
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="container">
+        <p>&copy; 2025 Tiny Thoughts Studio Limited. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
   </body>
 </html>
